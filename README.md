@@ -88,9 +88,9 @@ Group’s tech stack plan:
     If the user reaches 2000 → crash animation, then the system continues after any button press
     
     What it teaches:
-    The threat of a rollover bug
-    Integer overflow/misinterpretation
-    System failure due to representation
+      - The threat of a rollover bug
+      - Integer overflow/misinterpretation
+      - System failure due to representation
 
 
   ### 2. Interactive Game - “Midnight Crisis Fix-it Game.”
@@ -108,17 +108,14 @@ Group’s tech stack plan:
     A timer runs (The timer is only 12 minutes, but 24 minutes at 2.0 speed is displayed to resemble 24 hours):
     23:58 -> 23:59 -> 00:00
     
-    
-    
     Outcome states:
-    Fixed systems: World is Stable ending
-    Missed systems: System Collapse Simulation.
-    
+      - Fixed systems: World is Stable ending
+      - Missed systems: System Collapse Simulation.
     
     What it teaches:
-    Prioritization in system design
-    Real-world engineering constraints
-    Why did Y2K cost billions to fix
+      - Prioritization in system design
+      - Real-world engineering constraints
+      - Why the Y2K cost billions to fix
 
 
 ## III. Proposed Design Layout
