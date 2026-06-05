@@ -92,9 +92,7 @@ Express will be used only if additional backend functionality becomes necessary.
 
 ### 1. Introduction (Story Hook)
 
-- What is Y2K?
-- Why everyone feared the year 2000
-- "Would computers think 2000 = 1900?"
+As the final seconds of 1999 ticked away, the world stood on the edge of a digital cliff, fearing that the technology powering modern civilization would fail the moment 2000 began. This fear became known as the Y2K crisis or the “Millennium Bug”. Y2K was caused by storing years with only two digits (storing 1999 as “99”). Moreover, many feared that computers interpreted “00” as 1900 instead of 2000. This simple problem threatened to crash the systems that controlled everything, such as bank accounts and electricity, which resulted in people losing money or power. Eventually, the Y2K crisis became a crucial lesson in the importance of preparing for technological risks before they develop into a global threat.
 
 ### 2. Technical Explanation (CSARCH Core)
 
