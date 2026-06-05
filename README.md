@@ -39,13 +39,13 @@ Group’s tech stack plan:
 
 ## I. Proposed Structure:
 
-  1. Introduction (Story Hook)
+  ### 1. Introduction (Story Hook)
      
     - What is Y2K?
     - Why everyone feared the year 2000
     - “Would computers think 2000 = 1900?”
   
-  2. Technical Explanation (CSARCH core)
+  ### 2. Technical Explanation (CSARCH core)
      
     a. 2-Digit Year Storage
       - In the early years of computing, storage costs were extremely expensive, and so programmers stored years as only 2 digits in order to conserve space. COBOL, which was the dominant language, defined it in its data          definitions as 6-digit date fields: PIC 9(6) 
@@ -65,7 +65,7 @@ Group’s tech stack plan:
       b. Wrong sort order: Any new data encoded 2000 and onwards will be recorded and shown under 1999 data and below. (“99” > “00”)
       c. Crashes: Some systems didn’t recognize “00” and would outright be rejected as input.
   
-  3. Timeline Section (visual)
+  ### 3. Timeline Section (visual)
 
      - 1970-1990: systems designed with shortcuts
      - 1995-1999: panic begins
@@ -74,7 +74,7 @@ Group’s tech stack plan:
 
 ## II. Interactive Components
 
-  1. Interactive Simulation - “The Year Counter: Stop at 2000.”
+  ### 1. Interactive Simulation - “The Year Counter: Stop at 2000.”
      
     Concept:
     A simple system clock simulation of years going from 1900 → 2000.
@@ -93,7 +93,7 @@ Group’s tech stack plan:
     System failure due to representation
 
 
-  2. Interactive Game - “Midnight Crisis Fix-it Game.”
+  ### 2. Interactive Game - “Midnight Crisis Fix-it Game.”
      
     Concept:
     You are a software engineer on December 31, 1999, and you must fix the systems before midnight.
@@ -123,7 +123,7 @@ Group’s tech stack plan:
 
 ## III. Proposed Design Layout
 
-  PC Display
+  ### PC Display
   
   
   
@@ -141,6 +141,6 @@ Group’s tech stack plan:
   
   
   
-  Mobile Display
+  ### Mobile Display
 
 
