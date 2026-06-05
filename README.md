@@ -2,7 +2,8 @@
 
 **Group Name:** Project Y2K  
 **Topic Theme:** The Y2K Bug in the 20th Century
-**Github Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit-Proposal/blob/main/README.md
+<br>
+**GitHub Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit-Proposal/blob/main/README.md
 
 ## Group Members
 
