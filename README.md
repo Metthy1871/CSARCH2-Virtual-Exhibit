@@ -24,12 +24,67 @@
 | MDX | Main exhibit content page; combines written content with embedded React components |
 | CSS | Styling; used to replicate the visual aesthetic of late-1990s computing environments |
 
+#### Astro 6
+
+Astro will serve as the primary framework for our virtual exhibit. It is the required framework for the project template and will be responsible for rendering the museum page.
+
+**Will be used for:**
+- Easy integration of React components
+- Compatible with the central museum website architecture
+
+#### React (JSX)
+
+React will be used to develop all the interactive exhibit elements. The project's simulations and educational games will be implemented as reusable JSX components, displayed in the MDX file. In addition, most of us have experience with using React JSX.
+
+**Will be used for:**
+- Year Counter Simulator Component (Interactive Simulator)
+- Midnight Crisis Fix-It Game Component (Interactive Game)
+- Interactive Timeline Component (Interactive Timeline)
+
+#### MDX
+
+MDX will be used to create the main exhibit content page. It combines the introduction and technical explanations with embedded React components for interactive demonstrations.
+
+**Will be used for:**
+- Easy content and component placement manipulation
+- Integration between text and interactive elements
+
+#### CSS
+
+Traditional CSS will be used to replicate the visual style of late-1990s computing environments. In addition, most of us have experience with using traditional CSS.
+
+**Planned design elements:**
+- Create a design with a 1980s technology theme (an early version of Windows) to replicate what the User Interface looked like at the time of the Y2K bug
+- CRT monitor design
+- Retro terminal interfaces
+- Warning screens for interactive simulation
+- Responsive layouts for desktop and mobile devices
+- Animations throughout the webpage
+
+---
+
 ### Backend
 
 | Technology | Role |
 |---|---|
 | Node.js | Runtime environment for local development and Astro deployment |
 | Express | Included as a contingency for additional backend functionality if needed |
+
+#### Node.js
+
+Node.js will provide the runtime environment for the backend of our local development and for the deployment of the Astro application. Moreover, it is also very compatible and is required by Astro.
+
+**Will be used for:**
+- Compatibility with Astro, since it's required by Astro
+- Supports modern JavaScript tooling and is compatible with React (JSX)
+
+#### Express
+
+Express will be used only if additional backend functionality becomes necessary. In addition, the majority of the team has experience in utilizing Express with Node.js.
+
+**Potential uses:**
+- Recording high scores for the interactive games
+- Tracking visitor statistics
 
 ---
 
