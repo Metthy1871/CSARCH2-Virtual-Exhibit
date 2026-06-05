@@ -122,8 +122,22 @@ This caused three main failure modes:
 
 ### PC Display
 
-*(Mockup to be added)*
+![PC Display 1](public/Screnshot_PC-Display_1.png)
+![PC Display 2](public/Screnshot_PC-Display_2.png)
+![PC Display 3](public/Screnshot_PC-Display_3.png)
+![PC Display 4](public/Screnshot_PC-Display_4.png)
 
 ### Mobile Display
 
-*(Mockup to be added)*
+![Mobile Display 1](public/Screnshot_Mobile-Display_1.png)
+![Mobile Display 2](public/Screnshot_Mobile-Display_2.png)
+![Mobile Display 3](public/Screnshot_Mobile-Display_3.png)
+![Mobile Display 4](public/Screnshot_Mobile-Display_4.png)
+
+## IV. Planned JSX Components
+
+| Component | Purpose |
+|---|---|
+| `Y2KTimeline.jsx` | Displays the visual timeline of Y2K events from 1970 through the global remediation effort |
+| `YearCounter.jsx` | Simulates the year rollover from 1990–2000 with crash animation and loop logic |
+| `CrisisManager.jsx` | Manages the Midnight Crisis Fix-It game, including the system selection, time cost, timer, and outcome states |
