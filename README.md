@@ -2,6 +2,7 @@
 
 **Group Name:** Project Y2K  
 **Topic Theme:** The Y2K Bug in the 20th Century
+**Github Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit-Proposal/blob/main/README.md
 
 ## Group Members
 
@@ -194,3 +195,5 @@ This caused three main failure modes:
 | `Y2KTimeline.jsx` | Displays the visual timeline of Y2K events from 1970 through the global remediation effort |
 | `YearCounter.jsx` | Simulates the year rollover from 1990–2000 with crash animation and loop logic |
 | `CrisisManager.jsx` | Manages the Midnight Crisis Fix-It game, including the system selection, time cost, timer, and outcome states |
+
+
