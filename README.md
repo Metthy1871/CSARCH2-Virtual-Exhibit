@@ -1,7 +1,7 @@
 # CSARCH2 Virtual Exhibit Proposal
 
 **Group Name:** *Project Spectre* <br>
-**Topic Theme:** *Spectre and Meltdown Vulnerabilities (2018)*
+**Topic Theme:** *Spectre and Meltdown Vulnerabilities (2018)* (updated)
 <br>
 **GitHub Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit-Proposal/blob/main/README.md
 
