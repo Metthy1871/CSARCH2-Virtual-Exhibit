@@ -5,21 +5,21 @@ const EVENTS = [
     year: "1995",
     label: "Speculation Goes Mainstream",
     tagColor: "green",
-    summary: "Intel's P6 microarchitecture introduces out-of-order and speculative execution as standard CPU design. Every major manufacturer follows. The performance gains were significant — CPUs could execute tens of future instructions before confirming the branch direction. Nobody considered the security implications because the results were supposed to be discarded if the prediction was wrong.",
+    summary: "Intel's P6 microarchitecture introduces out-of-order and speculative execution as standard CPU design. Every major manufacturer follows. The performance gains were significant - CPUs could execute tens of future instructions before confirming the branch direction. Nobody considered the security implications because the results were supposed to be discarded if the prediction was wrong.",
     impact: "Every Intel CPU sold from 1995 onward would carry the seed of the vulnerability.",
   },
   {
     year: "1998–2000s",
     label: "Industry-Wide Adoption",
     tagColor: "green",
-    summary: "AMD, ARM, and IBM all adopt speculative execution variants. It becomes the defining performance feature of the modern CPU era. Branch prediction accuracy improves from ~85% to over 95%. The performance uplift becomes non-negotiable — removing speculation would slow CPUs by 20–30%. The feature was too embedded to revisit.",
+    summary: "AMD, ARM, and IBM all adopt speculative execution variants. It becomes the defining performance feature of the modern CPU era. Branch prediction accuracy improves from ~85% to over 95%. The performance uplift becomes non-negotiable - removing speculation would slow CPUs by 20–30%. The feature was too embedded to revisit.",
     impact: "Billions of devices shipped with the same underlying architectural assumption.",
   },
   {
     year: "Mid-2017",
     label: "Private Discovery",
     tagColor: "amber",
-    summary: "Google Project Zero researcher Jann Horn independently discovers both Spectre and Meltdown. AMD, ARM, and Intel are notified under coordinated disclosure. Horn's original report showed a real password could be read from kernel memory at ~2,000 bytes per second on unpatched hardware. Other research teams independently discovered the same flaws within weeks of each other — a sign the vulnerability had been waiting to be found.",
+    summary: "Google Project Zero researcher Jann Horn independently discovers both Spectre and Meltdown. AMD, ARM, and Intel are notified under coordinated disclosure. Horn's original report showed a real password could be read from kernel memory at ~2,000 bytes per second on unpatched hardware. Other research teams independently discovered the same flaws within weeks of each other - a sign the vulnerability had been waiting to be found.",
     impact: "Vendors had roughly 6 months to develop patches before public disclosure.",
   },
   {
@@ -27,13 +27,13 @@ const EVENTS = [
     label: "Public Disclosure",
     tagColor: "red",
     summary: "The story leaks before the coordinated embargo date. Full technical details of both CVEs are published simultaneously across Google, Graz University of Technology, and independent researchers. CVE-2017-5753 (Spectre variant 1), CVE-2017-5715 (Spectre variant 2), and CVE-2017-5754 (Meltdown) are released. Within hours, proof-of-concept code is publicly available. Emergency patches ship for Windows, Linux, and macOS the same day.",
-    impact: "Every cloud provider — AWS, Google Cloud, Azure — began emergency reboots of millions of servers within 48 hours.",
+    impact: "Every cloud provider - AWS, Google Cloud, Azure - began emergency reboots of millions of servers within 48 hours.",
   },
   {
     year: "Jan–Mar 2018",
     label: "Emergency Patching",
     tagColor: "amber",
-    summary: "A worldwide patching effort begins. OS vendors, browser makers, and cloud providers race to push mitigations. The primary software mitigation for Meltdown — Kernel Page Table Isolation (KPTI) — added a costly context switch every time user code called into the kernel. Database workloads and I/O-heavy applications saw 10–30% performance regressions. Intel's first microcode patches were so unstable that Microsoft had to issue an emergency Windows update disabling them.",
+    summary: "A worldwide patching effort begins. OS vendors, browser makers, and cloud providers race to push mitigations. The primary software mitigation for Meltdown - Kernel Page Table Isolation (KPTI) - added a costly context switch every time user code called into the kernel. Database workloads and I/O-heavy applications saw 10–30% performance regressions. Intel's first microcode patches were so unstable that Microsoft had to issue an emergency Windows update disabling them.",
     impact: "Estimated $50–100 billion in remediation costs globally across cloud infrastructure, enterprises, and consumers.",
   },
   {
@@ -47,7 +47,7 @@ const EVENTS = [
     year: "2019–Present",
     label: "Hardware Redesigns",
     tagColor: "green",
-    summary: "Intel Ice Lake (2019) and later Cascade Lake, Tiger Lake ship with hardware-level mitigations for the original variants. AMD Zen 2 and ARM v8.5 introduce architectural fixes. The hardware fixes are meaningful but incomplete — the fundamental tradeoff between performance and security via speculation cannot be fully resolved without abandoning the entire paradigm. Researchers continue finding new variants in 2020, 2021, and beyond.",
+    summary: "Intel Ice Lake (2019) and later Cascade Lake, Tiger Lake ship with hardware-level mitigations for the original variants. AMD Zen 2 and ARM v8.5 introduce architectural fixes. The hardware fixes are meaningful but incomplete - the fundamental tradeoff between performance and security via speculation cannot be fully resolved without abandoning the entire paradigm. Researchers continue finding new variants in 2020, 2021, and beyond.",
     impact: "Modern CPUs now include dedicated hardware controls that software can use to dial speculation up or down depending on workload sensitivity.",
   },
 ];
@@ -66,12 +66,12 @@ export default function SpectreTimeline() {
     <section className="spectre-timeline">
       <div className="timeline-frame">
         <header>
-          <strong>Historical Timeline — Spectre &amp; Meltdown</strong>
+          <strong>Historical Timeline - Spectre &amp; Meltdown</strong>
           <span className="safe">{EVENTS.length} key events</span>
         </header>
 
         <div className="timeline-layout">
-          {/* Left: event list — plain div, not <nav>, so it can't inherit the
+          {/* Left: event list - plain div, not <nav>, so it can't inherit the
               site-wide `nav { position: sticky }` rule from spectre.css */}
           <div className="event-list" role="navigation" aria-label="Timeline events">
             {EVENTS.map((evt, i) => (

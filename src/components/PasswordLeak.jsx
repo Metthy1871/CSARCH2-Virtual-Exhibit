@@ -309,7 +309,7 @@ export default function PasswordLeak() {
 
       <div className="terminal-frame">
         <header>
-          <strong>Memory Access Monitor — Side Channel Demo</strong>
+          <strong>Memory Access Monitor - Side Channel Demo</strong>
           <span className={view === "attacker" ? "alert" : "safe"}>
             {view === "attacker" ? "Attacker View Active" : "User View Active"}
           </span>
@@ -350,10 +350,10 @@ export default function PasswordLeak() {
           </div>
 
           <div className="panel attacker-panel">
-            <p className="eyebrow">Attacker Dashboard — Probe Array</p>
+            <p className="eyebrow">Attacker Dashboard - Probe Array</p>
 
             <div className="reconstruction">
-              <span>Reconstruction buffer — {revealed} of {secret.length} bytes locked</span>
+              <span>Reconstruction buffer - {revealed} of {secret.length} bytes locked</span>
               <div className="reconstruction-field" aria-label="Attacker reconstruction buffer">
                 {reconstructionBuffer.split("").map((char, index) => (
                   <span
@@ -420,7 +420,7 @@ export default function PasswordLeak() {
             The probe table is a simplified stand-in for a real cache side-channel:
             an attacker measures which memory address answers fastest, and a fast
             answer means that data was already sitting in the cache. That timing
-            difference — not the memory itself — is what leaks the secret. Real
+            difference - not the memory itself - is what leaks the secret. Real
             attacks probe far more addresses than shown here.
           </p>
         </aside>
