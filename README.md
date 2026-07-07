@@ -1,9 +1,12 @@
 # CSARCH2 Virtual Exhibit Proposal
 
-**Group Name:** _Project Spectre_ (Updated) <br>
+**Group Name:** _Project Spectre_ (Updated)
+<br>
 **Topic Theme:** _Spectre and Meltdown Vulnerabilities (2018)_ (Updated)
 <br>
 **GitHub Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit-Proposal
+<br>
+**Website viewing Link:** https://metthy1871.github.io/CSARCH2-Virtual-Exhibit/spectre/
 
 ## Group Members
 
@@ -176,7 +179,7 @@ Potentially affected:
 
 The user sees:
 
-Password: ****\*\*\*\*****
+Password: \***\*\*\*\*\*\*\***
 
 The system appears secure.
 
@@ -186,9 +189,9 @@ The attacker view displays a cache-monitoring panel.
 
 As the user triggers memory accesses, portions of the password gradually become visible:
 
-- P****\*\*\*****
-- Pa****\*\*****
-- Pas****\*****
+- P\***\*\*\*\*\*\***
+- Pa\***\*\*\*\*\***
+- Pas\***\*\*\*\***
 - Pass**\*\*\*\***
 
 until the entire password is reconstructed.
@@ -249,17 +252,15 @@ Every choice consumes time.
 
 ### PC Display
 
-![PC Display 1](public/PC-Display_1.png)
-![PC Display 2](public/PC-Display_2.png)
-![PC Display 3](public/PC-Display_3.png)
-![PC Display 4](public/PC-Display_4.png)
+![PC Display 1](public/NEW_PC-Display_1.png)
+![PC Display 2](public/NEW_PC-Display_2.png)
+![PC Display 3](public/NEW_PC-Display_3.png)
 
 ### Mobile Display
 
-![Mobile Display 1](public/Mobile-Display1.png)
-![Mobile Display 1](public/Mobile-Display2.png)
-![Mobile Display 1](public/Mobile-Display3.png)
-![Mobile Display 1](public/Mobile-Display4.png)
+![Mobile Display 1](public/NEW_Mobile-Display1.png)
+![Mobile Display 1](public/NEW_Mobile-Display2.png)
+![Mobile Display 1](public/NEW_Mobile-Display3.png)
 
 Mobile Optimizations:
 
@@ -278,35 +279,51 @@ Mobile Optimizations:
 
 ## What's Been Done
 
-- Built the full exhibit page (`Spectre_Vulnerability.mdx`) with all content sections including hero, concepts, timeline, simulation, and games
-- Implemented 4 interactive React components:
-    - `PasswordLeak.jsx` - demonstrates cache side-channel attacks by reconstructing a hidden password through timing measurements
-    - `SpeculativeExecutionLab.jsx` - CPU pipeline decision game where the player balances speed against cache trace risk
-    - `PatchMemoryLeak.jsx` - incident response game where the player patches vulnerable systems before a timer runs out
-    - `SpectreTimeline.jsx` - clickable interactive timeline covering 1995 to present
+- Created the full exhibit page (`Spectre_Vulnerability.mdx`) with everything including hero + concepts + timeline + simulation + games
+- Created 7 interactive React components for:
+    - `PasswordLeak.jsx` - reconstructs an invisible password using timing measurements to illustrate cache side-channel attacks
+    - `SpeculativeExecutionLab.jsx` - CPU pipeline decision game that pits speed against cache trace risk.
+    - `PatchMemoryLeak.jsx` - Incident response game where the user has to patch vulnerable machines within a time limit.
+    - `Intro.jsx` - Landing page hero section that introduces Spectre and Meltdown with dramatic visual impact.
+    - `TextWithImage.astro` - Reusable layout component for pairing explanatory text with visual content.
+    - `TechExplanation.jsx` - Educational component explaining core concepts through interactive cards.
+    - `Timeline.jsx` - click through interactive timeline 1995 + to discover how and why Spectre happened.
 - Applied a full CSS theme replicating a cybersecurity terminal / security operations center aesthetic
 - Configured GitHub Pages deployment via GitHub Actions (`astro.yml`)
 - Added AI disclosure and references to both the README and the exhibit page
 
+### Tweaked proposed UI to become more "exhibit like" UI:
+
+#### PC Display
+
+![PC Display 1](public/NEW_PC_PIC1.png)
+![PC Display 2](public/NEW_PC_PIC_2.png)
+
+#### Mobile Display
+
+![Mobile Display 1](public/NEW_MOBILE_PIC1.png)
+![Mobile Display 1](public/NEW_MOBILE_PIC2.png)
+
 ## Challenges
 
-- Understanding how Astro's `base` path configuration affects routing for GitHub Pages
-- Getting React components to hydrate interactively inside MDX files
-- Keeping all four components visually consistent with the shared CSS style guide
-- Resolving 404 errors caused by the `base` path prefix not being included in the local dev URL
+- How GitHub Pages Routes Are Affected by Base in Astro
+- React components to be hydrated interactively inside MDX files.
+- All four components need to be visually consistent with the shared CSS style guide
+- Fixing 404s caused by base path prefix not being included in local dev
 
 ## Aha Moments
 
-- `client:load` is required on every React component embedded in MDX - without it, components render as static HTML with no interactivity
-- The `base` value in `astro.config.mjs` must exactly match the GitHub repo name including capitalization, otherwise all assets and routes break on deployment
+- You need to add `client:load` to every React component you import into MDX render as regular static HTML with no interactivity
+- The `base` value in `astro. config`. When deploying your app, mjs` must have the same capitalization as the GitHub repo name, or all of your assets and routes break.
 - MDX allows mixing raw HTML, Markdown, and JSX imports in the same file, which made structuring the exhibit page much more flexible than expected
 
 ## What's Left for Final Submission
 
-- Final proofreading and accuracy check of all technical content against references
-- Mobile responsiveness testing across all four interactive components
+- We are going to proofread check of all technical content against references
+- Ensure mobile responsiveness testing for interactive components
 - Additional animations and visual polish on interactive elements
-- Final review to ensure the exhibit meets all museum template requirements before the merge
+- Final review to make sure the exhibit meets all of the template requirements before the merge
+- How to fork with Astro, to be studied more independently since we are new to it.
 
 ---
 
