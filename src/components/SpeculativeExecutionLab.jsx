@@ -703,7 +703,9 @@ export default function SpeculativeExecutionLab() {
         }
 
         .game-heading {
+          background-color: black;
           margin-bottom: 28px;
+          padding: 20px 22px;
         }
 
         .game-heading p,
@@ -715,6 +717,7 @@ export default function SpeculativeExecutionLab() {
           letter-spacing: 0.12em;
           margin: 0 0 10px;
           text-transform: uppercase;
+          background-color: black;
         }
 
         .game-heading h2 {
@@ -730,7 +733,7 @@ export default function SpeculativeExecutionLab() {
         }
 
         .how-to-play {
-          background: rgba(37, 243, 154, 0.05);
+          background: black;
           border: 1px solid rgba(37, 243, 154, 0.2);
           margin-bottom: 24px;
           padding: 20px 22px;
