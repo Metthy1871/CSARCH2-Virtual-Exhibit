@@ -297,7 +297,7 @@ Mobile Optimizations:
 #### PC Display
 
 ![PC Display 1](public/NEW_PC_PIC1.png)
-![PC Display 2](public/NEW_PC_PIC_2.png)
+![PC Display 2](public/NEW_PC_PIC2.png)
 
 #### Mobile Display
 
