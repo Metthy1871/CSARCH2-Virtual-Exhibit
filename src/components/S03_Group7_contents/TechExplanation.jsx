@@ -1,4 +1,20 @@
 import '../../styles/S03_Group7_spectre.css';
+import { useReveal } from "./Animation.jsx";
+
+function ConceptCard({ c, index }) {
+  const [ref, visible] = useReveal();
+  return (
+    <div
+      ref={ref}
+      className={`card ${c.variant} reveal ${visible ? "is-visible" : ""}`}
+      style={{ transitionDelay: `${index * 90}ms` }}
+    >
+      <div className="card-index">{c.index}</div>
+      <div className="card-title">{c.title}</div>
+      <div className="card-body">{c.body}</div>
+    </div>
+  );
+}
 
 const concepts = [
   {
@@ -90,12 +106,8 @@ export default function TechExplanation() {
           </p>
 
           <div className="cards-grid">
-            {concepts.map((c) => (
-              <div className={`card ${c.variant}`} key={c.index}>
-                <div className="card-index">{c.index}</div>
-                <div className="card-title">{c.title}</div>
-                <div className="card-body">{c.body}</div>
-              </div>
+            {concepts.map((c, index) => (
+              <ConceptCard c={c} index={index} key={c.index} />
             ))}
           </div>
         </div>

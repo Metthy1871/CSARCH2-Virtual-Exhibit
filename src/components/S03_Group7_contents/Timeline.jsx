@@ -1,4 +1,21 @@
 import '../../styles/S03_Group7_spectre.css';
+import { useReveal } from "./Animation.jsx";
+
+function TimelineEvent({ e, index }) {
+  const [ref, visible] = useReveal(0.3);
+  return (
+    <div
+      ref={ref}
+      className={`timeline-event reveal-left ${visible ? "is-visible" : ""}`}
+      style={{ transitionDelay: `${index * 120}ms` }}
+    >
+      <div className={`timeline-dot ${e.isEvent ? "dot-event" : ""} ${visible ? "pulse" : ""}`} />
+      <div className={`timeline-year ${e.isEvent ? "red" : ""}`}>{e.period}</div>
+      <div className="timeline-title">{e.title}</div>
+      <div className="timeline-desc">{e.desc}</div>
+    </div>
+  );
+}
 
 const events = [
   {
@@ -46,13 +63,8 @@ export default function Timeline() {
 
           <div className="timeline">
             <div className="timeline-line" />
-            {events.map((e) => (
-              <div className="timeline-event" key={e.period}>
-                <div className={`timeline-dot ${e.isEvent ? 'dot-event' : ''}`} />
-                <div className={`timeline-year ${e.isEvent ? 'red' : ''}`}>{e.period}</div>
-                <div className="timeline-title">{e.title}</div>
-                <div className="timeline-desc">{e.desc}</div>
-              </div>
+            {events.map((e, index) => (
+              <TimelineEvent e={e} index={index} key={e.period} />
             ))}
           </div>
         </div>

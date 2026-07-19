@@ -1,6 +1,8 @@
 import '../../styles/S03_Group7_spectre.css';
+import { useReveal } from "./Animation.jsx";
 
 export default function Intro() {
+  const [ref, visible] = useReveal(0.1);
   return (
     <>
     <div className="spectreTheme">
@@ -18,7 +20,7 @@ export default function Intro() {
         <div className="intro-glow" />
         <div className="intro-glow-2" />
 
-        <div className="intro-inner">
+        <div ref={ref} className={`intro-inner reveal ${visible ? "is-visible" : ""}`}>
           <div className="intro-eyebrow">Core Concepts — CS Architecture</div>
 
           <h1 className="intro-title">
