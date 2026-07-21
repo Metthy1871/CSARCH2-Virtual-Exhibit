@@ -312,7 +312,7 @@ export default function PatchMemoryLeak() {
               <p className="eyebrow reveal-item" style={{ "--d": "0s" }}><i className="eyebrow-dash" />Mission Briefing</p>
               <h3 className="briefing-title reveal-item" style={{ "--d": "0.06s" }}>Patch the Memory Leak</h3>
               <p className="briefing-lede reveal-item" style={{ "--d": "0.12s" }}>
-                You're a cybersecurity engineer on January 3, 2018 — the day Spectre and Meltdown went
+                You're a cybersecurity engineer on January 3, 2018, the day Spectre and Meltdown went
                 public. Five systems are exposed to speculative-execution side-channel attacks. Secure as
                 many as you can before the window closes.
               </p>
@@ -321,10 +321,10 @@ export default function PatchMemoryLeak() {
                 <div className="brief-block">
                   <span className="brief-block-label">How To Play</span>
                   <ol className="brief-steps">
-                    <li>You have <strong>{MAX_CONCURRENT} engineers</strong> and <strong>{TOTAL_TIME} seconds</strong> — only {MAX_CONCURRENT} systems can be worked on at once.</li>
+                    <li>You have <strong>{MAX_CONCURRENT} engineers</strong> and <strong>{TOTAL_TIME} seconds</strong>, only {MAX_CONCURRENT} systems can be worked on at once.</li>
                     <li>Pick an action for each vulnerable system. Every action costs time, shown on its button.</li>
                     <li>The right patch fully secures a system. The wrong one wastes the time and leaves it exposed.</li>
-                    <li>Monitoring is faster but only ever partial — it never fully secures a system.</li>
+                    <li>Monitoring is faster but only ever partial, it never fully secures a system.</li>
                     <li>Ignoring a system is nearly instant, but leaves it fully vulnerable.</li>
                     <li>Keep every critical system secured to end with a Secure Infrastructure result.</li>
                   </ol>
@@ -358,7 +358,7 @@ export default function PatchMemoryLeak() {
               </div>
 
               <p className="briefing-hint reveal-item" style={{ "--d": "0.24s" }}>
-                No two systems share the exact same fix. Match the patch to the vulnerability — guessing
+                No two systems share the exact same fix. Match the patch to the vulnerability, guessing
                 wrong burns your window just as fast as guessing right.
               </p>
 
