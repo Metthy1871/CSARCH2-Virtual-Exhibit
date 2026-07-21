@@ -210,7 +210,7 @@ const RULES = [
   {
     title: "Trigger a memory access",
     detail:
-      "Press Trigger Memory Access to start a round. This is also what opens the 10-second attack window — every probe address gets a fresh, randomized access time.",
+      "Press Trigger Memory Access to start a round. This is also what opens the 10-second attack window, every probe address gets a fresh, randomized access time.",
   },
   {
     title: "Race the attack window",

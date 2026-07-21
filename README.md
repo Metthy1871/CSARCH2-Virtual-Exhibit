@@ -327,7 +327,8 @@ Mobile Optimizations:
     - `Intro.jsx` - Landing page hero section that introduces Spectre and Meltdown with dramatic visual impact.
     - `TextWithImage.astro` - Reusable layout component for pairing explanatory text with visual content.
     - `TechExplanation.jsx` - Educational component explaining core concepts through interactive cards.
-    - `Timeline.jsx` - click through interactive timeline 1995 + to discover how and why Spectre happened.
+    - `Timeline.jsx` - Click through interactive timeline 1995 + to discover how and why Spectre happened.
+    - `References.jsx` - List of sources used for the content of the webpage.
 - Applied a full CSS theme replicating a cybersecurity terminal / security operations center aesthetic
 - Configured GitHub Pages deployment via GitHub Actions (`astro.yml`)
 - Added AI disclosure and references to both the README and the exhibit page
@@ -368,7 +369,7 @@ Mobile Optimizations:
 
 The team utilized AI tools such as **ChatGPT** and **Gemini** to help break down complex architectural concepts regarding the Spectre vulnerability during our research. Additionally, AI was used for brainstorming our UI and optimizing our CSS styling for our React components.
 
-All core content, historical analysis, and actual implementation of the interactive exhibit were executed entirely by us. AI tools were merely used to support our learning and polish the user experience.
+All core content, historical analysis, and actual implementation of the interactive exhibit were reviewed, verified, and executed entirely by us. AI tools were merely used to support our learning and polish the user experience.
 
 | Tool    | Purpose                                                               |
 | ------- | --------------------------------------------------------------------- |
@@ -379,12 +380,16 @@ All core content, historical analysis, and actual implementation of the interact
 
 ## References
 
-Aktas Aydin, H. (2023). _SPECTRE: Analysis of attacks and defense mechanisms against Spectre._
+Aktas Aydin, H. (2023). _SPECTRE: Analysis of attacks and defense mechanisms against Spectre. https://www.researchgate.net/publication/380897005_SPECTRE_ANALYSIS_OF_ATTACKS_AND_DEFENSE_MECHANISIMS_AGAINST_TO_SPECTRE
 
 Kee, W.J., Abdul Kadir, M.F., Wahab, F.A., Zakaria-Mohamad, A.H., Mohamed, M.A., & Abidin-Bharun, A.F.A. (2018). A review on Spectre attacks and Meltdown with its mitigation techniques. _International Journal of Engineering and Technology (UAE), 7_, 209-213.
+https://www.researchgate.net/publication/329810347_A_Review_on_spectre_attacks_and_meltdown_with_its_mitigation_techniques
 
 Lipp, M., Schwarz, M., Gruss, D., Prescher, T., Haas, W., Mangard, S., Kocher, P., Genkin, D., Yarom, Y., & Hamburg, M. (2018). _Meltdown._
+https://arxiv.org/abs/1801.01207
 
 Smith, A. (2003). Cache memory. 180-187.
+https://doi.org/10.1145/356887.356892
 
 Wahab, F., Zakaria, A., Mohamed, M.A., & Abdul Kadir, M.F. (2020). Mitigating risk of Spectre and Meltdown vulnerabilities. _8_, 741-746.
+https://www.researchgate.net/publication/344411705_Mitigating_Risk_of_Spectre_and_Meltdown_Vulnerabilities
