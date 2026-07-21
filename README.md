@@ -295,8 +295,9 @@ Each system has one or two _correct_ actions (e.g., the Web Browser needs a Brow
 
 ### PC Display 
 
-![PC Display 1](public/NEW_PC_PIC1.png)
-![PC Display 2](public/NEW_PC_PIC2.png)
+![PC Display 1](public/FINAL_PCDISPLAY1.png)
+![PC Display 2](public/FINAL_PCDISPLAY2.png)
+![PC Display 3](public/FINAL_PCDISPLAY3.png)
 
 ### Mobile Display 
 
