@@ -338,19 +338,6 @@ Mobile Optimizations:
 - Added a timer and interactive features like streaks on password leak and speculative lab
 - Modified and enchanced the UI of all interactive game sand timelines
 
-
-### Accomplished a UI with enhanced animations/ graphics and improved visuals and interactivity:
-
-#### PC Display
-
-![PC Display 1](public/NEW_PC_PIC1.png)
-![PC Display 2](public/NEW_PC_PIC2.png)
-
-#### Mobile Display
-
-![Mobile Display 1](public/NEW_MOBILE_PIC1.png)
-![Mobile Display 1](public/NEW_MOBILE_PIC2.png)
-
 ## All Challenges
 
 - Deciding what design to use for the webpage
