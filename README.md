@@ -6,7 +6,7 @@
 <br>
 **GitHub Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit
 <br>
-**Website viewing Link:** https://imnotneon-dev.github.io/CSARCH2-Virtual-Exhibit/S03_Group7_spectre/
+**Website viewing Link:** https://imnotneon-dev.github.io/CSARCH2-Virtual-Exhibit/
 
 ## Group Members
 
