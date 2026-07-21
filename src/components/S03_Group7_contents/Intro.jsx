@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro-glow" />
         <div className="intro-glow-2" />
 
-        <div ref={ref} className={`intro-inner reveal ${visible ? "is-visible" : ""}`}>
+        <div ref={ref} className={`intro-inner intro-grid reveal ${visible ? "is-visible" : ""}`}>
           <div className="intro-eyebrow">Core Concepts — CS Architecture</div>
 
           <h1 className="intro-title">
@@ -28,12 +28,31 @@ export default function Intro() {
             <span className="word-meltdown">Meltdown</span>
           </h1>
 
+          <div className="intro-visual" aria-hidden="true">
+            <svg viewBox="0 0 200 200" className="chip-svg">
+              <rect x="55" y="55" width="90" height="90" rx="4" className="chip-die" />
+              <rect x="75" y="75" width="50" height="50" rx="2" className="chip-core" />
+              <rect x="88" y="88" width="24" height="24" className="chip-hot" />
+              <g className="chip-pins">
+                <line x1="55" y1="70" x2="35" y2="70" /><line x1="55" y1="90" x2="35" y2="90" />
+                <line x1="55" y1="110" x2="35" y2="110" /><line x1="55" y1="130" x2="35" y2="130" />
+                <line x1="145" y1="70" x2="165" y2="70" /><line x1="145" y1="90" x2="165" y2="90" />
+                <line x1="145" y1="110" x2="165" y2="110" /><line x1="145" y1="130" x2="165" y2="130" />
+                <line x1="70" y1="55" x2="70" y2="35" /><line x1="90" y1="55" x2="90" y2="35" />
+                <line x1="110" y1="55" x2="110" y2="35" /><line x1="130" y1="55" x2="130" y2="35" />
+                <line x1="70" y1="145" x2="70" y2="165" /><line x1="90" y1="145" x2="90" y2="165" />
+                <line x1="110" y1="145" x2="110" y2="165" /><line x1="130" y1="145" x2="130" y2="165" />
+              </g>
+              <circle cx="100" cy="100" r="6" className="chip-pulse" />
+            </svg>
+          </div>
+
           <p className="intro-subtitle">
             In 2018, the digital world faced a nightmare when two security flaws were
             discovered in the physical chips of every computer and smartphone on Earth.
           </p>
 
-          <p className="section-body" style={{ marginTop: '1.5rem', maxWidth: '640px' }}>
+          <p className="section-body intro-body" style={{ marginTop: '1.5rem', maxWidth: '640px' }}>
             Unlike typical viruses that can easily be deleted, these were &ldquo;hardware
             vulnerabilities&rdquo; that had existed for decades. The problem originated
             from a design choice to make devices faster by having chips predict the
