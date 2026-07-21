@@ -1,8 +1,8 @@
 # CSARCH2 Virtual Exhibit Proposal
 
-**Group Name:** _Project Spectre_ (Updated)
+**Group Name:** _Project Spectre_ 
 <br>
-**Topic Theme:** _Spectre and Meltdown Vulnerabilities (2018)_ (Updated)
+**Topic Theme:** _Spectre and Meltdown Vulnerabilities (2018)_ 
 <br>
 **GitHub Link:** https://github.com/Metthy1871/CSARCH2-Virtual-Exhibit
 <br>
@@ -18,9 +18,9 @@
 
 ---
 
-## Tech Stack (Updated)
+## Tech Stack 
 
-### Frontend (Updated)
+### Frontend 
 
 | Technology  | Role                                                                                                             |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -104,13 +104,13 @@ Express will be used only if additional backend functionality becomes necessary.
 
 ## I. Proposed Structure
 
-### 1. _Introduction (Story Hook)_ (Updated)
+### 1. _Introduction (Story Hook)_ 
 
 In 2018, the digital world faced a nightmare when two security flaws were discovered in the physical chips of every computer and smartphone on Earth. These flaws are known as Spectre and Meltdown. Unlike typical viruses that can easily be deleted, there were "hardware vulnerabilities" that had existed for decades. The problem originated from a design choice to make devices faster by having chips predict the user's next action. However, this speed trick inadvertently left a backdoor for hackers to steal private information, such as passwords. Furthermore, this discovery caused a global panic because the flaw was built into the physical parts of the machines, making it nearly impossible to fix without slowing down computers everywhere. Ultimately, Spectre and Meltdown served as a powerful lesson that the rush for faster technology can create deep security risks that put the entire world's privacy at stake.
 
-### 2. Technical Explanation (CSARCH Core) (Updated)
+### 2. Technical Explanation (CSARCH Core) 
 
-#### a. _Speculative Execution_ (Updated)
+#### a. _Speculative Execution_ 
 
 Modern processors attempt to improve performance by predicting future instructions and executing them ahead of time.
 
@@ -122,7 +122,7 @@ accessSecretData();
 The CPU may temporarily execute the instruction before confirming whether the user is actually authorized.
 Normally these speculative operations are discarded. However, traces remain in the CPU cache.
 
-#### b. _CPU Cache_ (Updated)
+#### b. _CPU Cache_ 
 
 A cache is a small, high-speed memory area that stores frequently used data.
 
@@ -130,7 +130,7 @@ Accessing cached data is significantly faster than retrieving data from main mem
 
 Attackers can measure timing differences to determine whether certain data was loaded into cache.
 
-#### c. _Meltdown_ (Updated)
+#### c. _Meltdown_ 
 
 Meltdown allows an attacker to read privileged kernel memory from an unprivileged application.
 
@@ -145,7 +145,7 @@ Potentially exposed information:
 - Encryption keys
 - Sensitive operating system data
 
-#### d. _Spectre_ (Updated)
+#### d. _Spectre_ 
 
 Spectre tricks programs into executing instructions they normally would not execute.
 
@@ -158,7 +158,7 @@ Potentially affected:
 - Virtual machines
 - Cloud computing environments
 
-### 3. _Timeline (Visual Section)_ (Updated)
+### 3. _Timeline (Visual Section)_ 
 
 | Period    | Event                                                           |
 | --------- | --------------------------------------------------------------- |
@@ -169,10 +169,9 @@ Potentially affected:
 
 ---
 
-## II. Interactive Components (Updated)
+## II. Interactive Components 
 
-### 1. _Interactive Simulation - "The Hidden Password Leak"_ (Updated)
-
+### 1. _Interactive Simulation - "The Hidden Password Leak"_ 
 **Concept:** Demonstrates how sensitive data can remain hidden from the user interface but still be exposed through cache side-channel attacks.
 
 **Gameplay:**
@@ -247,7 +246,7 @@ This game turns the player into the CPU. Each round presents a branch instructio
 
 ---
 
-### 3. _Interactive Game – "Patch the Memory Leak"_ (Updated)
+### 3. _Interactive Game – "Patch the Memory Leak"_ 
 
 **Concept:** You are a cybersecurity engineer responding to the disclosure of Spectre and Meltdown. Your goal is to secure critical systems before attackers steal sensitive data.
 
@@ -294,12 +293,12 @@ Each system has one or two _correct_ actions (e.g., the Web Browser needs a Brow
 
 ## III. _Proposed Design Layout_
 
-### PC Display (Updated)
+### PC Display 
 
 ![PC Display 1](public/NEW_PC_PIC1.png)
 ![PC Display 2](public/NEW_PC_PIC2.png)
 
-### Mobile Display (Updated)
+### Mobile Display 
 
 ![Mobile Display 1](public/NEW_MOBILE_PIC1.png)
 ![Mobile Display 1](public/NEW_MOBILE_PIC2.png)
@@ -313,13 +312,11 @@ Mobile Optimizations:
 
 ---
 
-# Mid-Milestone Update: Project Spectre
+# Final Development Documentation
+## Proposal
+- The group originally planned to feature the Y2K Bug (2000) in this virtual exhibit. However, since another group had already chosen the same topic, the group decided to focus instead on the Spectre and Meltdown vulnerabilities.
 
-**Deployment Link:** https://metthy1871.github.io/CSARCH2-Virtual-Exhibit/spectre/
-
----
-
-## What's Been Done
+## All Technical and Creative Accomplishments
 
 - Created the full exhibit page (`Spectre_Vulnerability.mdx`) with everything including hero + concepts + timeline + simulation + games
 - Created 7 interactive React components for:
@@ -333,8 +330,14 @@ Mobile Optimizations:
 - Applied a full CSS theme replicating a cybersecurity terminal / security operations center aesthetic
 - Configured GitHub Pages deployment via GitHub Actions (`astro.yml`)
 - Added AI disclosure and references to both the README and the exhibit page
+- Created our own Astro layout file (S03_Group_7_SpectreLayout.astro) to make the website feel more full and exciting.
+- Additional CSS file for website layout (S03_Group_7_layout.css)
+- Implemented scroll-driven animations, transition effects, and graphic polish across components to enhance the visuals of the website by integrating dynamic graphics and micro-interactions (hover effects, entrance reveals)
+- Added a timer and interactive features like streaks on password leak and speculative lab
+- Modified and enchanced the UI of all interactive game sand timelines
 
-### Tweaked proposed UI to become more "exhibit like" UI:
+
+### Accomplished a UI with enhanced animations/ graphics and improved visuals and interactivity:
 
 #### PC Display
 
@@ -346,26 +349,30 @@ Mobile Optimizations:
 ![Mobile Display 1](public/NEW_MOBILE_PIC1.png)
 ![Mobile Display 1](public/NEW_MOBILE_PIC2.png)
 
-## Challenges
+## All Challenges
 
+- Deciding what design to use for the webpage
 - How GitHub Pages Routes Are Affected by Base in Astro
-- React components to be hydrated interactively inside MDX files.
+- React components to be hydrated interactively inside MDX files
 - All four components need to be visually consistent with the shared CSS style guide
 - Fixing 404s caused by base path prefix not being included in local dev
+- Exploring ways to make the website feel less static or PPT-like
+- Creating a custom Astro layout to enhance the overall design and user experience
 
-## Aha Moments
+## All Aha Moments
 
 - You need to add `client:load` to every React component you import into MDX render as regular static HTML with no interactivity
 - The `base` value in `astro. config`. When deploying your app, mjs` must have the same capitalization as the GitHub repo name, or all of your assets and routes break.
 - MDX allows mixing raw HTML, Markdown, and JSX imports in the same file, which made structuring the exhibit page much more flexible than expected
+- Realizing that Astro strips client-side JavaScript from React components in MDX by default was a turning point. Adding client:load / client:visible instantly brought our interactive games and animation hooks back to life.
+- Creating S03_Group_7_SpectreLayout.astro showed us how cleanly Astro handles slotted content. We could build an entirely custom exhibit look and feel without risking global style conflicts on the host site.
 
-## What's Left for Final Submission
+## Completed Final Checking
 
-- We are going to proofread check of all technical content against references
-- Ensure mobile responsiveness testing for interactive components
-- Additional animations and visual polish on interactive elements
-- Final review to make sure the exhibit meets all of the template requirements before the merge
-- How to fork with Astro, to be studied more independently since we are new to it.
+- Proofread and verified all technical content against the provided references
+- Completed mobile responsiveness testing for all interactive components
+- Added and enhanced the animations and visual enhancements to interactive elements.
+- Completed final checking to ensure the exhibit met all template requirements before submission
 
 ---
 
